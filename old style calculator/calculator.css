@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,500;1,300;1,400&display=swap");
+@import url("http://fonts.cdnfonts.com/css/digital-numbers");
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    background-color: #e5e5e5;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.calculator {
+    width: 414px;
+    margin: 50px auto;
+    height: 736px;
+    /* border: 1px solid black; */
+    background-color: #f1f3f6;
+    padding: 10px;
+}
+
+.title {
+    color: #373a37;
+    line-height: 34px;
+    margin: 25px;
+    font-size: 28px;
+}
+
+.calc-screen {
+    position: relative;
+    width: 366px;
+    height: 60px;
+    padding: 23px;
+    /* margin-left: 20px; */
+    /* border: 1px solid red; */
+    font-family: "Digital Numbers", sans-serif;
+    font-size: 40px;
+    background: linear-gradient(92.94deg, #cad4c5 0%, #b2bfa5 100%);
+    box-shadow: inset 0px 0px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    /* border: none; */
+    filter: drop-shadow(7px 4px 3px rgba(0, 0, 0, 0.35));
+}
+
+.digit-numbers {
+    opacity: 0.08;
+    font-size: 40px;
+    font-family: "Digital Numbers", sans-serif;
+    position: absolute;
+    top: 24px;
+    left: 22px;
+}
+
+.buttons {
+    margin-top: 24px;
+    display: grid;
+    grid-template-areas: "a b c d" "ab bb cc cd" "aaa bff cdd dss" "ass bfd ces dfd" "zero zero gs gdds";
+    gap: 16px;
+}
+
+.btn {
+    background-color: #f1f3f6;
+    color: #3a4e89;
+    border-radius: 20px;
+    box-shadow: -5px -5px 10px #ffffff, 5px 5px 10px rgba(55, 84, 170, 0.1);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    font-size: 29px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn:hover {
+    filter: brightness(120%);
+}
+
+.zero {
+    grid-area: zero;
+    width: 100%;
+}
+
+.blue {
+    background-color: #3a4e89;
+    color: #ffff;
+    box-shadow: -5px -5px 10px #ffffff, 5px 5px 10px rgba(55, 84, 170, 0.12);
+}
+
+.blue:hover {
+    filter: brightness(180%);
+}
